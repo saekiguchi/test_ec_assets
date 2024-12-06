@@ -1,0 +1,65 @@
+:root {
+  --font-color: #111;
+  --primary: #E58600;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  touch-action: manipulation;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  letter-spacing: 0;
+  font-weight: normal;
+  color: var(--font-color);
+  font-kerning: auto;
+}
+*::before, *::after {
+  display: block;
+}
+
+picture, img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+iframe {
+  aspect-ratio: 16/9;
+  background-color: #ccc;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+}
+
+a:has(picture), a:has(img) {
+  display: block;
+}
+
+details summary {
+  list-style: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+:target {
+  scroll-margin-top: 100px;
+}/*# sourceMappingURL=style.css.map */
